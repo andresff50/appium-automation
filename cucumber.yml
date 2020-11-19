@@ -1,0 +1,7 @@
+custom: -t @SelectConverter --format html --out report.html --format pretty
+home: -t @HomeScreen --format html --out report.html --format pretty
+main: -t @MainMenu --format html --out report.html --format pretty
+
+#or operator
+any: -t @CustomConversion,@HomeScreen,@MainMenu --format html --out report.html
+strict: -t @HomeScreen -t @DefaultConversion --format html --out report.html --format pretty
